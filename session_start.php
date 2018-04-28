@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once 'Sanitize_functions.php';
-require_once 'CSRF_defense_using_tokens.php';
+require_once 'sanitize_functions.php';
+require_once 'csrf_defense_using_tokens.php';
 
 if(request_is_post()) {
   if(csrf_token_isValid()) {
