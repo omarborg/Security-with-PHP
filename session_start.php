@@ -15,6 +15,8 @@ if(request_is_post()) {
     $message = "CSRF token is missing or missmatched";
   }
 } else {
+  
+  //form not submitted or GET request 
   $message = "Please login.";
 }
 ?>
